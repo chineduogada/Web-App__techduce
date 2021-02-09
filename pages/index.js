@@ -1,21 +1,21 @@
 import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
+import Header from "@components/Header/Header";
+import Footer from "@components/Footer/Footer";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div className="container">
+    <Box p={2} maxW="1280px" mx="auto">
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">In hell, i excel but i can't breath</p>
+        <Header />
       </main>
 
       <Footer />
-    </div>
+    </Box>
   );
 }
