@@ -1,17 +1,18 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Button from "@components/lib/Button";
 import Section from "@components/lib/Section";
 import Text from "@components/lib/Text";
+import Heading from "@components/lib/Heading";
 
 const TrustedBy = () => {
   return (
-    <Section d="flex" justifyContent="center">
+    <Section maxW="500px">
       <Box>
         <Heading mb={5} fontSize="2xl">
           Trusted By
         </Heading>
 
-        <Flex justifyContent="space-between" alignItems="flex-end" w="500px">
+        <Flex justifyContent="space-between" alignItems="flex-end">
           <Box maxW="260px">
             <Text lineHeight="2">
               Thousands of students already add more focus to their work with{" "}

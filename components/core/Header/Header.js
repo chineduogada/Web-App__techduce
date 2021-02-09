@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-  Heading,
   List,
   ListItem,
   ListIcon,
@@ -12,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Brand from "@components/lib/Brand";
 import Button from "@components/lib/Button";
+import Heading from "@components/lib/Heading";
 import Text from "@components/lib/Text";
 import TextInput from "@components/lib/TextInput";
 import { FaCheckCircle } from "react-icons/fa";
