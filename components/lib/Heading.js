@@ -6,7 +6,7 @@ const Heading = ({ children, ...rest }) => {
       {...rest}
       sx={{
         "&": {
-          wordSpacing: "-6px",
+          wordSpacing: "-3px",
         },
       }}
     >
