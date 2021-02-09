@@ -6,6 +6,7 @@ import TrustedBy from "@components/core/TrustedBy/TrustedBy";
 import LearnFromExperts from "@components/core/LearnFromExperts/LearnFromExperts";
 import BoostYourKnowledge from "@components/core/BoostYourKnowledge/BoostYourKnowledge";
 import MostPopularCourses from "@components/core/MostPopularCourses/MostPopularCourses";
+import MostPopularTeachers from "@components/core/MostPopularTeachers/MostPopularTeachers";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <LearnFromExperts />
         <BoostYourKnowledge />
         <MostPopularCourses />
+        <MostPopularTeachers />
       </Box>
 
       <Footer />

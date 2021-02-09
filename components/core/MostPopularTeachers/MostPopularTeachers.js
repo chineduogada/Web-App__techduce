@@ -6,12 +6,11 @@ import Text from "@components/lib/Text";
 import CardCarousel from "../CardCarousel";
 import Card from "./Card";
 
-const MostPopularCourses = () => {
+const MostPopularTeachers = () => {
   return (
     <Section
       minW="100%"
       border="none"
-      bg="brand2.700"
       h="800px"
       pos="relative"
       overflow="hidden"
@@ -21,11 +20,10 @@ const MostPopularCourses = () => {
           templateColumns="1.5fr 3fr 1fr"
           alignItems="center"
           justifyItems="center"
-          // columnGap={1}
           mb={10}
         >
           <GridItem>
-            <Heading>Most popular courses</Heading>
+            <Heading>Most popular teachers</Heading>
           </GridItem>
 
           <GridItem mx={10}>
@@ -38,7 +36,7 @@ const MostPopularCourses = () => {
 
           <GridItem>
             <Box>
-              <Button dark>Explore courses</Button>
+              <Button dark>Explore teachers</Button>
             </Box>
           </GridItem>
         </Grid>
@@ -53,4 +51,4 @@ const MostPopularCourses = () => {
   );
 };
 
-export default MostPopularCourses;
+export default MostPopularTeachers;
