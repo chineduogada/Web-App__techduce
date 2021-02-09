@@ -5,13 +5,14 @@ import {
   List,
   ListItem,
   ListIcon,
-  Text,
   Progress,
   Grid,
   GridItem,
+  IconButton,
 } from "@chakra-ui/react";
 import Brand from "@components/lib/Brand";
 import Button from "@components/lib/Button";
+import Text from "@components/lib/Text";
 import TextInput from "@components/lib/TextInput";
 import { FaCheckCircle } from "react-icons/fa";
 import { ImRadioChecked } from "react-icons/im";
@@ -73,11 +74,11 @@ export default function Header() {
             pos="absolute"
             bottom={0}
             right={0}
-            pt={7}
+            pt={8}
             pb={5}
             px={5}
-            w="225px"
-            h="135px"
+            w="250px"
+            h="170px"
             bg="white"
             rounded="sm"
             boxShadow={`
@@ -100,12 +101,18 @@ export default function Header() {
               </GridItem>
             </Grid>
 
-            <Progress value={80} colorScheme="gray" size="sm" />
+            <Progress value={50} colorScheme="gray" size="sm" />
 
             <Flex alignItems="center" justifyContent="space-between">
-              <BsFillPlayFill />
-              <BsFillVolumeMuteFill />
-              <VscDebugRestart />
+              <IconButton isRound>
+                <BsFillPlayFill />
+              </IconButton>
+              <IconButton isRound>
+                <BsFillVolumeMuteFill />
+              </IconButton>
+              <IconButton isRound>
+                <VscDebugRestart />
+              </IconButton>
             </Flex>
           </Flex>
         </Box>

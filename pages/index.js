@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Header from "@components/Header/Header";
-import Footer from "@components/Footer/Footer";
 import { Box } from "@chakra-ui/react";
+import Header from "@components/core/Header/Header";
+import Footer from "@components/core/Footer/Footer";
+import TrustedBy from "@components/core/TrustedBy/TrustedBy";
 
 export default function Home() {
   return (
@@ -11,9 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header />
-      </main>
+      <Header />
+
+      <Box as="main">
+        <TrustedBy />
+      </Box>
 
       <Footer />
     </Box>
