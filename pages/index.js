@@ -4,6 +4,7 @@ import Header from "@components/core/Header/Header";
 import Footer from "@components/core/Footer/Footer";
 import TrustedBy from "@components/core/TrustedBy/TrustedBy";
 import LearnFromExperts from "@components/core/LearnFromExperts/LearnFromExperts";
+import BoostYourKnowledge from "@components/core/BoostYourKnowledge/BoostYourKnowledge";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Box as="main">
         <TrustedBy />
         <LearnFromExperts />
+        <BoostYourKnowledge />
       </Box>
 
       <Footer />
