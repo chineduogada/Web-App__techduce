@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header />
         <p className="description">In hell, i excel but i can't breath</p>
       </main>
 

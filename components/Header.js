@@ -1,3 +1,5 @@
-export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
+import Button from "./lib/Button";
+
+export default function Header() {
+  return <Button>sample</Button>;
 }
