@@ -22,7 +22,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <Box roundedTop="lg" bg="brand.600" py={5} px={20} pb={20}>
+    <Box as="header" roundedTop="lg" bg="brand.600" py={5} px={20} pb={20}>
       <Navbar />
 
       <Flex pl={10}>

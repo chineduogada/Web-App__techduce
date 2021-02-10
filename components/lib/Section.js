@@ -5,6 +5,7 @@ const Section = ({ children, ...rest }) => {
     <Box
       as="section"
       py={16}
+      px={2}
       my={10}
       mx="auto"
       maxW="900px"
