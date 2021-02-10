@@ -1,19 +1,21 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import Heading from "@components/lib/Heading";
 import Text from "@components/lib/Text";
 
-const Card = ({ data, ...rest }) => {
+const Card = ({ data, index, ...rest }) => {
   return (
     <Box
       flexShrink={0}
-      border="1px"
-      w="330px"
+      w="350px"
       h="490px"
       p={9}
       bg="white"
       {...rest}
+      mx={index === 2 ? 6 : 0}
     >
-      <Box h="230px" border="1px" mb={8}></Box>
+      <Box h="230px" mb={8}>
+        <Image src={`/img/card-${index}.jpg`} h="100%" w="100%" />
+      </Box>
 
       <Heading fontSize="xl" mb={3}>
         Increasing engagement with instagram

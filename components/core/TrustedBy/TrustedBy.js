@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import Button from "@components/lib/Button";
 import Section from "@components/lib/Section";
 import Text from "@components/lib/Text";
@@ -23,7 +23,9 @@ const TrustedBy = () => {
           <Button>see more</Button>
         </Flex>
 
-        <Flex flexWrap="wrap" border="1px" p={10} mt={8}></Flex>
+        <Flex p={10} mt={8}>
+          <Image src="/img/trusted.jpg" />
+        </Flex>
       </Box>
     </Section>
   );

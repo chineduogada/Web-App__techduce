@@ -24,7 +24,15 @@ const Card = ({ data, ...rest }) => {
         pos="absolute"
         top={0}
         left={0}
-      ></Box>
+      >
+        <Image
+          src="https://www.transparentpng.com/thumb/happy-person/MomTdI-women-girl-happy-person-clipart-photo.png"
+          alt="Women, Girl, Happy, Person Clipart Photo @transparentpng.com"
+          h="80%"
+          transform="translateY(20%)"
+          pos="relative"
+        />
+      </Box>
 
       <Box pos="relative" zIndex={1} p={5}>
         <Box

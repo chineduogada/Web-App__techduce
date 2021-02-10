@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import Button from "@components/lib/Button";
 import Heading from "@components/lib/Heading";
 import Section from "@components/lib/Section";
@@ -16,7 +16,9 @@ const BoostYourKnowledge = () => {
           <Button>get stater</Button>
         </Box>
 
-        <Box flex="1" border="1px" minH="400px"></Box>
+        <Box flex="1" minH="350px">
+          <Image src="/img/boost-knowledge.jpg" />
+        </Box>
       </Flex>
     </Section>
   );

@@ -1,20 +1,22 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import { MdStars } from "react-icons/md";
 import Heading from "@components/lib/Heading";
 import Text from "@components/lib/Text";
 
-const Card = ({ data, ...rest }) => {
+const Card = ({ data, index, ...rest }) => {
   return (
     <Box
       flexShrink={0}
-      border="1px"
       w="425px"
       h="477px"
       p={8}
+      mx={index === 1 ? 6 : 0}
       bg="white"
       {...rest}
     >
-      <Box minH="200px" border="1px" mb={8}></Box>
+      <Box h="200px" mb={8}>
+        <Image src={`/img/card-${index}.jpg`} h="100%" w="100%" />
+      </Box>
 
       <Heading fontSize="xl" textTransform="capitalize" mb={3}>
         native mac apps in swift tutorial

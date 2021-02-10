@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <Section as="footer">
       <Grid templateColumns="1.2fr .8fr .8fr .8fr" py={16}>
-        <GridItem border="1px">
+        <GridItem>
           <Brand logoOnly ml={1} fontSize="4xl" />
 
           <Heading fontSize="2xl" my={8}>
@@ -27,7 +27,7 @@ export default function Footer() {
             hello@quillow.edu
           </Link>
         </GridItem>
-        <GridItem border="1px" ml={5}>
+        <GridItem ml={5}>
           <Heading fontSize="lg" mb={5}>
             Platform
           </Heading>
@@ -37,7 +37,7 @@ export default function Footer() {
             <Text>Get the App</Text>
           </Stack>
         </GridItem>
-        <GridItem border="1px" ml={5}>
+        <GridItem ml={5}>
           <Heading fontSize="lg" mb={5}>
             Resources
           </Heading>
@@ -48,7 +48,7 @@ export default function Footer() {
             <Text>Affiliate</Text>
           </Stack>
         </GridItem>
-        <GridItem border="1px" ml={5}>
+        <GridItem ml={5}>
           <Heading fontSize="lg" mb={5}>
             Company
           </Heading>

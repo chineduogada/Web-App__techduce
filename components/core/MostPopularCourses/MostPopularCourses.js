@@ -44,9 +44,9 @@ const MostPopularCourses = () => {
         </Grid>
 
         <CardCarousel>
-          <Card />
-          <Card mx={6} />
-          <Card />
+          {[0, 1, 2].map((val) => (
+            <Card index={val} />
+          ))}
         </CardCarousel>
       </Box>
     </Section>

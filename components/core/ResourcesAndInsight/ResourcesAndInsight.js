@@ -43,9 +43,9 @@ const ResourcesAndInsight = () => {
         </Grid>
 
         <CardCarousel>
-          <Card />
-          <Card mx={16} />
-          <Card />
+          {[0, 2, 1].map((val) => (
+            <Card index={val} />
+          ))}
         </CardCarousel>
       </Box>
     </Section>

@@ -22,7 +22,27 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <Box as="header" roundedTop="lg" bg="brand.600" py={5} px={20} pb={20}>
+    <Box
+      as="header"
+      roundedTop="lg"
+      bg="brand.600"
+      py={5}
+      px={20}
+      pb={20}
+      pos="relative"
+      _before={{
+        content: '""',
+        pos: "absolute",
+        bottom: 0,
+        right: "10rem",
+        w: "400px",
+        h: "600px",
+        bgImage: "url('/img/header.jpg')",
+        bgPosition: "center",
+        bgSize: "contain",
+        bgRepeat: "no-repeat",
+      }}
+    >
       <Navbar />
 
       <Flex pl={10}>
