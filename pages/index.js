@@ -10,6 +10,7 @@ import MostPopularTeachers from "@components/core/MostPopularTeachers/MostPopula
 import ResourcesAndInsight from "@components/core/ResourcesAndInsight/ResourcesAndInsight";
 import SpecializedTrainingCourses from "@components/core/SpecializedTrainingCourses/SpecializedTrainingCourses";
 import Testimonials from "@components/core/Testimonials/Testimonials";
+import LaunchYourOwnPlatform from "@components/core/LaunchYourOwnPlatform/LaunchYourOwnPlatform";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <ResourcesAndInsight />
         <SpecializedTrainingCourses />
         <Testimonials />
+        <LaunchYourOwnPlatform />
       </Box>
 
       <Footer />
