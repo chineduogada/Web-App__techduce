@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Button from "@components/lib/Button";
 import Heading from "@components/lib/Heading";
 import Section from "@components/lib/Section";
@@ -6,7 +6,7 @@ import Text from "@components/lib/Text";
 import CardCarousel from "../CardCarousel";
 import Card from "./Card";
 
-const MostPopularCourses = () => {
+const ResourcesAndInsight = () => {
   return (
     <Section
       minW="100%"
@@ -21,11 +21,10 @@ const MostPopularCourses = () => {
           templateColumns="1.5fr 3fr 1fr"
           alignItems="center"
           justifyItems="center"
-          // columnGap={1}
           mb={10}
         >
           <GridItem>
-            <Heading>Most popular courses</Heading>
+            <Heading>Resources & Insight</Heading>
           </GridItem>
 
           <GridItem mx={10}>
@@ -38,14 +37,14 @@ const MostPopularCourses = () => {
 
           <GridItem>
             <Box>
-              <Button dark>Explore courses</Button>
+              <Button dark>visit blog</Button>
             </Box>
           </GridItem>
         </Grid>
 
         <CardCarousel>
           <Card />
-          <Card mx={6} />
+          <Card mx={16} />
           <Card />
         </CardCarousel>
       </Box>
@@ -53,4 +52,4 @@ const MostPopularCourses = () => {
   );
 };
 
-export default MostPopularCourses;
+export default ResourcesAndInsight;

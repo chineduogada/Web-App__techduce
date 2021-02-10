@@ -2,18 +2,19 @@ import { Box, Flex, Image } from "@chakra-ui/react";
 import Heading from "@components/lib/Heading";
 import Text from "@components/lib/Text";
 
-const Card = ({ data }) => {
+const Card = ({ data, ...rest }) => {
   return (
     <Flex
       alignItems="flex-end"
       flexShrink={0}
-      mr={5}
+      mr={7}
       w="360px"
       h="477px"
       px={8}
       pb={10}
       bg="white"
       pos="relative"
+      {...rest}
     >
       <Box
         h="100%"

@@ -43,7 +43,7 @@ const MostPopularTeachers = () => {
 
         <CardCarousel>
           <Card />
-          <Card />
+          <Card mx={10} />
           <Card />
         </CardCarousel>
       </Box>

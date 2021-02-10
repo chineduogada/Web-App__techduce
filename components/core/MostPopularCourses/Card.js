@@ -3,16 +3,16 @@ import { MdStars } from "react-icons/md";
 import Heading from "@components/lib/Heading";
 import Text from "@components/lib/Text";
 
-const Card = ({ data }) => {
+const Card = ({ data, ...rest }) => {
   return (
     <Box
       flexShrink={0}
       border="1px"
-      mr={5}
       w="425px"
       h="477px"
       p={8}
       bg="white"
+      {...rest}
     >
       <Box minH="200px" border="1px" mb={8}></Box>
 
