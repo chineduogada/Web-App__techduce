@@ -8,6 +8,7 @@ import BoostYourKnowledge from "@components/core/BoostYourKnowledge/BoostYourKno
 import MostPopularCourses from "@components/core/MostPopularCourses/MostPopularCourses";
 import MostPopularTeachers from "@components/core/MostPopularTeachers/MostPopularTeachers";
 import ResourcesAndInsight from "@components/core/ResourcesAndInsight/ResourcesAndInsight";
+import SpecializedTrainingCourses from "@components/core/SpecializedTrainingCourses/SpecializedTrainingCourses";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <MostPopularCourses />
         <MostPopularTeachers />
         <ResourcesAndInsight />
+        <SpecializedTrainingCourses />
       </Box>
 
       <Footer />

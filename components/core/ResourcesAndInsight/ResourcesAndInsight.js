@@ -11,7 +11,7 @@ const ResourcesAndInsight = () => {
     <Section
       minW="100%"
       border="none"
-      bg="brand2.700"
+      bg="brand.400"
       h="800px"
       pos="relative"
       overflow="hidden"
